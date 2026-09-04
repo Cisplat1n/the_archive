@@ -72,7 +72,7 @@ plugins:
       type: timeago         # Automatically prints "Last updated 3 days ago" on every page
   - git-authors             # Automatically tracks who edited the file in Git
   - encryptedcontent:
-        global_password: !ENV WIKI_PASSWORD
+      global_password: !ENV WIKI_PASSWORD
       # This plugin allows you to encrypt specific pages in your wiki
       # so that only authorized users can view them.
       # You can specify which pages to encrypt in the `encrypted_pages` list below.
