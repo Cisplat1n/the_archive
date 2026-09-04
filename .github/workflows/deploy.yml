@@ -15,7 +15,9 @@ jobs:
         with:
           python-version: '3.x'
       - run: pip install -r requirements.txt
+        working-directory: ./wiki
       - run: mkdocs build
+        working-directory: ./wiki
         env:
           WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
       - uses: peaceiris/actions-gh-pages@v4
