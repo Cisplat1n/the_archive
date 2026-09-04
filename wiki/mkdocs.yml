@@ -1,0 +1,75 @@
+site_name: The Platin Wiki
+nav:
+  - Home: index.md
+
+  - Github: 
+      - Overview: GitHub/GitHub_overview.md
+      - Tutorials: GitHub/GitHub_tutorials.md
+      - Libraries: GitHub/GitHub_libraries.md
+
+  - Snowflake:
+      - Overview: Snowflake/Snowflake_overview.md
+      - Tutorials: Snowflake/Snowflake_tutorials.md
+      - Libraries: Snowflake/Snowflake_libraries.md
+
+  - SQL:
+      - Overview: SQL/SQL_overview.md
+      - Tutorials: SQL/SQL_tutorials.md
+      - Libraries: SQL/SQL_libraries.md
+
+  - AWS:
+      - Overview: AWS/AWS_overview.md
+      - Tutorials: AWS/AWS_tutorials.md
+      - Libraries: AWS/AWS_libraries.md
+
+  - DBT:
+      - Overview: DBT/DBT_overview.md
+      - Tutorials: DBT/DBT_tutorials.md
+      - Libraries: DBT/DBT_libraries.md
+
+
+  - Python:
+      - Overview: Python/overview.md
+      - Tutorials: Python/tutorials.md
+      - Libraries: Python/libraries.md
+      - Venv: Python/Setting_Up_A_Venv.md
+
+  - R: 
+      - Overview: R/R_overview.md
+      - Tutorials: R/R_tutorials.md
+      - Libraries: R/R_libraries.md
+      - Venv: R/R_Setting_Up_A_Renv.md
+
+  - Rust:
+      - Overview: Rust/Rust_overview.md
+      - Tutorials: Rust/Rust_tutorials.md
+      - Libraries: Rust/Rust_libraries.md
+
+
+
+
+
+
+  - About: about.md
+theme:
+  name: dracula
+
+# Advanced extensions compatible with the Dracula theme
+markdown_extensions:
+  - pymdownx.superfences:
+      # This allows you to write interactive Mermaid.js diagrams 
+      # inside standard code blocks using ```mermaid
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search                  # Keeps the default search bar active
+  - table-reader            # Lets you pull raw CSV files directly into beautiful Markdown tables
+  - git-revision-date-localized:
+      type: timeago         # Automatically prints "Last updated 3 days ago" on every page
+  - git-authors             # Automatically tracks who edited the file in Git
+
+extra_css:
+  - 'extra.css'

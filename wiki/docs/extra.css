@@ -1,0 +1,7 @@
+/* Force a Dracula Pink underline directly onto the active link text */
+.sidebar ul li a.active {
+    text-decoration: underline !important;
+    text-decoration-color: #ff79c6 !important;   /* Dracula Pink */
+    text-underline-offset: 5px !important;       /* Pushes line slightly below text */
+    text-decoration-thickness: 2px !important;  
+}
