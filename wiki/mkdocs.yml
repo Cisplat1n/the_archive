@@ -2,6 +2,11 @@ site_name: The Platin Wiki
 nav:
   - Home: index.md
 
+  - AWS:
+      - Overview: AWS/AWS_overview.md
+      - Tutorials: AWS/AWS_tutorials.md
+      - Libraries: AWS/AWS_libraries.md
+
   - Github: 
       - Overview: GitHub/GitHub_overview.md
       - Tutorials: GitHub/GitHub_tutorials.md
@@ -16,11 +21,6 @@ nav:
       - Overview: SQL/SQL_overview.md
       - Tutorials: SQL/SQL_tutorials.md
       - Libraries: SQL/SQL_libraries.md
-
-  - AWS:
-      - Overview: AWS/AWS_overview.md
-      - Tutorials: AWS/AWS_tutorials.md
-      - Libraries: AWS/AWS_libraries.md
 
   - DBT:
       - Overview: DBT/DBT_overview.md
@@ -66,10 +66,24 @@ markdown_extensions:
 
 plugins:
   - search                  # Keeps the default search bar active
+  - awesome-pages           # Lets you organize your pages in a more flexible way
   - table-reader            # Lets you pull raw CSV files directly into beautiful Markdown tables
   - git-revision-date-localized:
       type: timeago         # Automatically prints "Last updated 3 days ago" on every page
   - git-authors             # Automatically tracks who edited the file in Git
-
+  - encryptedcontent:
+        global_password: !ENV WIKI_PASSWORD
+      # This plugin allows you to encrypt specific pages in your wiki
+      # so that only authorized users can view them.
+      # You can specify which pages to encrypt in the `encrypted_pages` list below.
+      encrypted_pages:
+        - 'AWS/AWS_libraries.md'
+        - 'GitHub/GitHub_libraries.md'
+        - 'Snowflake/Snowflake_libraries.md'
+        - 'SQL/SQL_libraries.md'
+        - 'DBT/DBT_libraries.md'
+        - 'Python/libraries.md'
+        - 'R/R_libraries.md'
+        - 'Rust/Rust_libraries.md'
 extra_css:
   - 'extra.css'
