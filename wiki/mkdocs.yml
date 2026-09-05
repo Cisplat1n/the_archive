@@ -77,13 +77,13 @@ plugins:
       # so that only authorized users can view them.
       # You can specify which pages to encrypt in the `encrypted_pages` list below.
       encrypted_pages:
-        - 'AWS/AWS_libraries.md'
-        - 'GitHub/GitHub_libraries.md'
-        - 'Snowflake/Snowflake_libraries.md'
-        - 'SQL/SQL_libraries.md'
-        - 'DBT/DBT_libraries.md'
-        - 'Python/libraries.md'
-        - 'R/R_libraries.md'
-        - 'Rust/Rust_libraries.md'
+        #- 'AWS/AWS_libraries.md'
+        #- 'GitHub/GitHub_libraries.md'
+        #- 'Snowflake/Snowflake_libraries.md'
+        #- 'SQL/SQL_libraries.md'
+        #- 'DBT/DBT_libraries.md'
+        #- 'Python/libraries.md'
+        #- 'R/R_libraries.md'
+        #- 'Rust/Rust_libraries.md'
 extra_css:
   - 'extra.css'
