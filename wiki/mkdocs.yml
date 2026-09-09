@@ -60,6 +60,8 @@ theme:
     code: Fira Code
   features:
     - navigation.top
+    - navigation.instant
+    - navigation.footer
     - navigation.integrate
     - search.suggest
     - search.highlight
@@ -67,6 +69,9 @@ theme:
 
 extra_css:
   - extra.css
+
+extra_javascript:
+  - extra.js
 
 # Advanced extensions compatible with the Dracula theme
 markdown_extensions:
