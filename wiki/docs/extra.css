@@ -1,11 +1,12 @@
-/* Force a Dracula Pink underline directly onto the active link text */
-.sidebar ul li a.active {
-    text-decoration: underline !important;
-    text-decoration-color: #ff79c6 !important;   /* Dracula Pink */
-    text-underline-offset: 5px !important;       /* Pushes line slightly below text */
-    text-decoration-thickness: 2px !important;  
+/* extra.css */
+[data-md-color-scheme="dracula"] {
+  --md-default-bg-color: #282a36;
+  --md-default-fg-color: #f8f8f2;
+  --md-default-fg-color--light: #f8f8f2;
+  --md-default-fg-color--lighter: #6272a4;
+  --md-code-bg-color: #44475a;
+  --md-code-fg-color: #f8f8f2;
+  --md-primary-fg-color: #bd93f9;   /* purple */
+  --md-accent-fg-color: #ff79c6;    /* pink */
+  --md-typeset-a-color: #8be9fd;    /* cyan links */
 }
-
-
-
-
