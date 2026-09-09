@@ -56,9 +56,9 @@ theme:
   name: material
   palette:
     - scheme: dracula
-    # toggle:
-        #icon: material/weather-night
-        #name: Dracula theme
+      toggle:
+        icon: material/weather-night
+        name: Dracula theme
   features:
     - navigation.tabs
     - navigation.sections
@@ -69,6 +69,10 @@ theme:
     - content.code.copy
     - content.tabs.link
     - toc.follow
+
+
+extra_css:
+  - extra.css
 
 # Advanced extensions compatible with the Dracula theme
 markdown_extensions:
