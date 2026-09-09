@@ -56,20 +56,14 @@ theme:
   name: material
   palette:
     - scheme: dracula
-      toggle:
-        icon: material/weather-night
-        name: Dracula theme
+  font:
+    code: Fira Code
   features:
-  #  - navigation.tabs
-  #  - navigation.sections
     - navigation.top
-    - navigation.instant
+    - navigation.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
-    - content.tabs.link
-    - toc.follow
-
 
 extra_css:
   - extra.css
@@ -93,4 +87,4 @@ plugins:
   - git-authors             # Automatically tracks who edited the file in Git
   - encryptcontent:
       password_inventory:
-        _global: !ENV [WIKI_PASSWORD, 'temporary_dev_password']
+        secret: !ENV [WIKI_PASSWORD, 'temporary_dev_password']
