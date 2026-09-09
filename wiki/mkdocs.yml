@@ -60,8 +60,8 @@ theme:
         icon: material/weather-night
         name: Dracula theme
   features:
-    - navigation.tabs
-    - navigation.sections
+  #  - navigation.tabs
+  #  - navigation.sections
     - navigation.top
     - navigation.instant
     - search.suggest
