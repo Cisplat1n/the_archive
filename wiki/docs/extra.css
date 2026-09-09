@@ -87,3 +87,71 @@
   -webkit-text-fill-color: #8be9fd !important;
 }
 
+
+/* =========================================
+   MOBILE RESPONSIVE LAYOUT
+   ========================================= */
+
+@media screen and (max-width: 76.1875em) {
+
+  /* Remove desktop card margins */
+  .md-sidebar--primary,
+  .md-content,
+  .md-sidebar--secondary {
+    margin: 0;
+  }
+
+  /* Let Material control the sidebar */
+  .md-sidebar--primary {
+    padding: 0;
+    background: transparent;
+  }
+
+  .md-sidebar--primary .md-sidebar__inner {
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  /* Main content should use the full mobile width */
+  .md-content {
+    padding: 0;
+    border-radius: 0;
+    background: #343746;
+  }
+
+  .md-content__inner {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  /* Don't allow long things to force the page wider */
+  .md-typeset {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  /* Code blocks can scroll horizontally instead of clipping */
+  .md-typeset pre {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Tables should scroll horizontally rather than breaking the page */
+  .md-typeset table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Images must shrink to fit the phone */
+  .md-typeset img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Don't let links/long strings push the layout sideways */
+  .md-typeset a {
+    overflow-wrap: anywhere;
+  }
+}
