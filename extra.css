@@ -10,3 +10,79 @@
   --md-accent-fg-color: #ff79c6;    /* pink */
   --md-typeset-a-color: #8be9fd;    /* cyan links */
 }
+
+
+
+:not(pre) > code {
+  background-color: #44475a;
+  color: #ff79c6;
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+}
+
+
+/* LEFT SIDEBAR */
+.md-sidebar--primary {
+  margin: 1rem;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.md-sidebar--primary .md-sidebar__inner {
+  background-color: #343746;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+/* Hide duplicate site title */
+.md-sidebar--primary .md-nav__title {
+  display: none !important;
+}
+
+
+/* CENTRE CONTENT */
+.md-content {
+  margin: 1rem 1rem 1rem 0;
+  padding: 0;
+  background-color: #343746;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.md-content__inner {
+  padding: 1.5rem 2rem;
+}
+
+
+/* RIGHT TOC — NO CARD */
+.md-sidebar--secondary {
+  margin: 1rem 1rem 1rem 0;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.md-sidebar--secondary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-sidebar__inner {
+  background: transparent;
+}
+
+
+/* NAVIGATION TEXT */
+.md-sidebar--primary .md-nav__link {
+  color: #f8f8f2 !important;
+  -webkit-text-fill-color: #f8f8f2 !important;
+}
+
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav__link[aria-current="page"] {
+  color: #ff79c6 !important;
+  -webkit-text-fill-color: #ff79c6 !important;
+}
+
+.md-sidebar--primary .md-nav__link:hover {
+  color: #8be9fd !important;
+  -webkit-text-fill-color: #8be9fd !important;
+}
