@@ -88,6 +88,91 @@
 }
 
 
+:root {
+  --md-typeset-color: #f8f8f2;
+}
+
+
+:root {
+  --md-footer-bg-color: #282a36;        /* Prev/Next bar background */
+  --md-footer-bg-color--dark: #1e1f29;  /* "Made with..." strip, usually a shade darker */
+  --md-footer-fg-color: #f8f8f2;        /* footer text/icon color */
+}
+
+.md-footer__link {
+  background-color: #343746;
+  border-radius: 999px;
+  padding: 0.05rem 0.35rem;
+  margin: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.md-footer__link:hover {
+  background-color: #44475a;
+}
+
+
+
+/* Give every nested nav item a positioning anchor for its ::before */
+.md-nav__item .md-nav__list > .md-nav__item {
+  position: relative;
+}
+
+
+.md-nav__item .md-nav__list {
+  position: relative;
+  margin-left: 0.6rem;
+  padding-left: 0.9rem;
+  border-left: 1px dashed #ff79c6;
+}
+
+
+.md-nav__item .md-nav__list > .md-nav__item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  left: -0.9rem;
+  width: 0.7rem;
+  height: 1px;
+  background-color: #ff79c6;   /* already solid — this one was fine */
+}
+
+.md-nav__item .md-nav__list > .md-nav__item:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.9rem;
+  width: 0.7rem;
+  height: 0.75rem;
+  border-left: 1px solid #ff79c6;   /* was dashed */
+  border-bottom: 1px solid #ff79c6; /* was dashed */
+  border-bottom-left-radius: 6px;
+}
+----
+.md-nav--primary > .md-nav__list > .md-nav__item--active {
+  position: relative;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  position: relative;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav__link::before {
+  content: "";
+  position: absolute;
+  left: -0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ff79c6;
+}
+
+---
 /* =========================================
    MOBILE RESPONSIVE LAYOUT
    ========================================= */

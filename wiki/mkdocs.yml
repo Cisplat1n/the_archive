@@ -2,6 +2,21 @@ site_name: The Platin Wiki
 nav:
   - Home: index.md
 
+  - Data Engineering:
+      - Overview: Data_Engineering/Data_Engineering_overview.md
+      - Tutorials: Data_Engineering/Data_Engineering_tutorials.md
+      - Libraries: Data_Engineering/Data_Engineering_libraries.md
+
+  - Data Science:
+      - Overview: Data_Science/Data_Science_overview.md
+      - Tutorials: Data_Science/Data_Science_tutorials.md
+      - Libraries: Data_Science/Data_Science_libraries.md
+
+  - SQL:
+      - Overview: SQL/SQL_overview.md
+      - Tutorials: 
+          - Welcome To SQL: SQL/SQL_welcome.md
+
   - AWS:
       - Overview: AWS/AWS_overview.md
       - Tutorials: AWS/AWS_tutorials.md
@@ -16,11 +31,6 @@ nav:
       - Overview: Snowflake/Snowflake_overview.md
       - Tutorials: Snowflake/Snowflake_tutorials.md
       - Libraries: Snowflake/Snowflake_libraries.md
-
-  - SQL:
-      - Overview: SQL/SQL_overview.md
-      - Tutorials: SQL/SQL_tutorials.md
-      - Libraries: SQL/SQL_libraries.md
 
   - DBT:
       - Overview: DBT/DBT_overview.md
